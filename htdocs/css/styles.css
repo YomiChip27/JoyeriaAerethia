@@ -1,0 +1,23 @@
+
+.hero-banner{
+    min-height: 500px;
+
+    background-image: url('/joyeria/public/img/banner.png');
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+.hero-banner::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-banner .container{
+    position: relative;
+    z-index: 2;
+}
